@@ -1,0 +1,54 @@
+﻿<Window
+    x:Class="Lette.Wpf.AppCommands.Example.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:Lette.Wpf.AppCommands.Example"
+    xmlns:l="clr-namespace:Lette.Wpf.AppCommands;assembly=Lette.Wpf.AppCommands"
+    mc:Ignorable="d"
+    Title="AppCommand bindings"
+    d:DataContext="{d:DesignInstance local:MainWindowViewModel}"
+    Height="450"
+    Width="800">
+
+    <Window.InputBindings>
+        <KeyBinding
+            Modifiers="Alt" Key="Left"
+            Command="{Binding SetInformationCommand}"
+            CommandParameter="Back (kbd)" />
+        <KeyBinding
+            Modifiers="Alt" Key="Right"
+            Command="{Binding SetInformationCommand}"
+            CommandParameter="Fwd (kbd)" />
+    </Window.InputBindings>
+
+    <l:Window.AppCommandBindings>
+        <l:AppCommandBinding
+            AppCommand="BrowserBackward"
+            Command="{Binding SetInformationCommand}"
+            CommandParameter="Back (appcmd)" />
+        <l:AppCommandBinding
+            AppCommand="BrowserForward"
+            Command="{Binding SetInformationCommand}"
+            CommandParameter="Fwd (appcmd)" />
+    </l:Window.AppCommandBindings>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Use Alt+LeftArrow, Alt+RightArrow, and any device input that generates Back and Forward navigation commands." />
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="{Binding Information}" />
+        </StackPanel>
+
+    </Grid>
+
+</Window>

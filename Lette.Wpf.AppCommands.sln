@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lette.Wpf.AppCommands.Example", "Lette.Wpf.AppCommands.Example\Lette.Wpf.AppCommands.Example.csproj", "{080E6582-6D88-4C23-A198-B8852E5CBA09}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lette.Wpf.AppCommands", "Lette.Wpf.AppCommands\Lette.Wpf.AppCommands.csproj", "{C382BA56-7148-4925-987E-88E5CCF878C3}"
 EndProject
 Global
