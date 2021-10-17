@@ -1,11 +1,25 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFrameworks>net5.0-windows;net472</TargetFrameworks>
+        <Version>1.0.0</Version>
+        <TargetFrameworks>net5.0-windows7.0;netcoreapp3.1;net45</TargetFrameworks>
         <UseWPF>true</UseWPF>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <Copyright>none</Copyright>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <Authors>Christoffer Lette</Authors>
+        <Company>Lette Consulting AB</Company>
+        <Title>Attached behavior for system-wide application commands.</Title>
+        <Description>AppCommandBinding, an MVVM-friendly attached behavior, where you can bind WPF ICommands to system-defined application commands, e.g. BrowserBackwards and BrowserForward that are usually triggered by mapped extra buttons on your mouse.</Description>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
         <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.37" />
     </ItemGroup>
 

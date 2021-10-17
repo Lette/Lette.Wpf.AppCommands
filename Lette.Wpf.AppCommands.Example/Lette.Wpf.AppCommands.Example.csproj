@@ -2,12 +2,20 @@
 
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <TargetFrameworks>net5.0-windows;net472</TargetFrameworks>
+        <TargetFrameworks>net5.0-windows7.0;netcoreapp3.1;net45</TargetFrameworks>
         <UseWPF>true</UseWPF>
+        <DeterministicSourcePaths>false</DeterministicSourcePaths>
+        <Version>1.0.0</Version>
+        <Copyright>none</Copyright>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <Authors>Christoffer Lette</Authors>
+        <Company>Lette Consulting AB</Company>
+        <Title>Example project for Lette.Wpf.AppCommand.</Title>
+        <Description>Showcases AppCommandBinding, an MVVM-friendly attached behavior, where you can bind WPF ICommands to system-defined application commands, e.g. BrowserBackwards and BrowserForward that are usually triggered by mapped extra buttons on your mouse.</Description>
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Lette.Wpf.AppCommands\Lette.Wpf.AppCommands.csproj" />
+        <PackageReference Include="Lette.Wpf.AppCommands" Version="1.0.0" />
     </ItemGroup>
 
 </Project>
