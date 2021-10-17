@@ -4,3 +4,4 @@ obj/
 *.user
 *.DotSettings
 packages/
+*.nupkg
