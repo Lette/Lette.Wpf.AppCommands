@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <VersionPrefix>1.0.2</VersionPrefix>
+        <VersionPrefix>1.0.3</VersionPrefix>
         <TargetFrameworks>net5.0-windows7.0;netcoreapp3.1;net45</TargetFrameworks>
         <UseWPF>true</UseWPF>
 
