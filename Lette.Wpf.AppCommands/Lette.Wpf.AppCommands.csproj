@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <VersionPrefix>1.0.1</VersionPrefix>
+        <VersionPrefix>1.0.2</VersionPrefix>
         <TargetFrameworks>net5.0-windows7.0;netcoreapp3.1;net45</TargetFrameworks>
         <UseWPF>true</UseWPF>
 
@@ -13,11 +13,11 @@
         <Title>Attached behavior for system-wide application commands.</Title>
         <Description>AppCommandBinding, an MVVM-friendly attached behavior, where you can bind WPF ICommands to system-defined application commands, e.g. BrowserBackwards and BrowserForward that are usually triggered by mapped extra buttons on your mouse.</Description>
 
+        <!--<PackageReadmeFile>README.md</PackageReadmeFile>-->
+
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
         <EmbedUntrackedSources>true</EmbedUntrackedSources>
         <DebugType>portable</DebugType>
-<!--        <DebugType Condition=" '$(TargetFrameworkIdentifier)' == '.NETFramework' ">full</DebugType>-->
-<!--        <DebugType Condition=" '$(TargetFrameworkIdentifier)' != '.NETFramework' ">portable</DebugType>-->
         <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     </PropertyGroup>
@@ -28,6 +28,10 @@
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
         <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.37" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="\" />
     </ItemGroup>
 
 </Project>
