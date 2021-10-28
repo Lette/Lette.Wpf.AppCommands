@@ -15,7 +15,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Lette.Wpf.AppCommands" Version="1.0.0" />
+        <PackageReference Include="Lette.Wpf.AppCommands" Version="1.0.1" />
     </ItemGroup>
 
 </Project>
