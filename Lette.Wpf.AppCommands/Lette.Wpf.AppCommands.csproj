@@ -15,8 +15,9 @@
 
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
         <EmbedUntrackedSources>true</EmbedUntrackedSources>
-        <DebugType Condition=" '$(TargetFrameworkIdentifier)' == '.NETFramework' ">full</DebugType>
-        <DebugType Condition=" '$(TargetFrameworkIdentifier)' != '.NETFramework' ">portable</DebugType>
+        <DebugType>portable</DebugType>
+<!--        <DebugType Condition=" '$(TargetFrameworkIdentifier)' == '.NETFramework' ">full</DebugType>-->
+<!--        <DebugType Condition=" '$(TargetFrameworkIdentifier)' != '.NETFramework' ">portable</DebugType>-->
         <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     </PropertyGroup>
